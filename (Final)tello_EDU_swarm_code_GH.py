@@ -8,17 +8,17 @@ class Swarm(object):
         drones.tellos = []
         drones.pools = []
         drones.sn2ip = {
-            '0TQZGANED0021X': '192.168.3.101',            #시리얼 넘버와 ip 배정
-            '0TQZGANED0020C': '192.168.3.103',
+            '0TQZGANED0021X': '192.168.0.10',            #시리얼 넘버와 ip 배정
+            '0TQDG6JEDBCYF1': '192.168.0.11',
         }
         drones.id2sn = {
             0: '0TQZGANED0021X',                        #시리얼 넘버 별 순서 배정
-            1: '0TQZGANED0020C',
+            1: '0TQDG6JEDBCYF1',
 
         }
         drones.ip2id = {
-            '192.168.3.101': 0,                    #ip별 순서 배정
-            '192.168.3.103': 1,
+            '192.168.0.10': 0,                    #ip별 순서 배정
+            '192.168.0.11': 1,
         }
 
     def start(drones):             # 군집 비행 메인 루프, 위에서 작성한 틀 바탕
